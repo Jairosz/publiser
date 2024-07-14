@@ -1,0 +1,13 @@
+/* You can add global styles to this file, and also import other style files */
+
+
+@font-face {
+    font-family: 'AspiraXXXNarBlackItalic';
+    src: url('./assets/fonts/AspiraXXXNarW01BlackItalic/AspiraXXXNarW01BlackItalic.ttf') format('truetype');
+    font-weight: normal;
+    font-style: italic;
+}
+
+body {
+    font-family: 'AspiraXXXNarBlackItalic', sans-serif;
+}
