@@ -1,0 +1,182 @@
+.container100 {
+  height: 100%;
+  width: 100%;
+  background-image: url(../../assets/img/camisetasmain-fotor-20240715145258.png);
+  background-size: cover;
+  background-repeat: no-repeat;
+  background-position: center;
+}
+.text1,
+.text2,
+.img1 {
+  position: absolute;
+  font-family: Arial, sans-serif;
+  color: #333;
+}
+.text1 {
+  bottom: 32%;
+  right: 50%;
+}
+.text2 {
+  bottom: 4%;
+  right: 85%;
+}
+ul li {
+  color: #ffff;
+  font-family: "DigitalSans";
+  font-size: 1.2rem;
+}
+.texto {
+  color: black;
+  font-family: "DigitalSans";
+  font-size: 3rem;
+}
+.titulo {
+  color: #ffff;
+  font-family: "DigitalSans";
+  font-size: 4rem;
+}
+.titulo2 {
+  color: #50b6ba;
+  font-family: "DigitalSans";
+  font-size: 2rem;
+}
+/* Responsive breakpoints */
+
+/* Resolución móvil vertical */
+@media (max-width: 576px) {
+  p {
+    margin: 0;
+  }
+  .text1 {
+    bottom: 28%;
+    right: 15%;
+  }
+  .text2 {
+    bottom: 0%;
+    right: 65%;
+  }
+  ul li {
+    color: #ffff;
+    font-family: "DigitalSans";
+    font-size: 0.5rem;
+  }
+  .texto {
+    color: black;
+    font-family: "DigitalSans";
+    font-size: 1.5rem;
+  }
+  .titulo {
+    color: #ffff;
+    font-family: "DigitalSans";
+    font-size: 2rem;
+  }
+  .titulo2 {
+    color: #50b6ba;
+    font-family: "DigitalSans";
+    font-size: 0.9rem;
+  }
+}
+
+@media (min-width: 576px) {
+  p {
+    margin: 0;
+  }
+  .text1 {
+    bottom: 28%;
+    right: 38%;
+  }
+  .text2 {
+    bottom: 0%;
+    right: 81%;
+  }
+  ul li {
+    color: #ffff;
+    font-family: "DigitalSans";
+    font-size: 0.5rem;
+  }
+  .texto {
+    color: black;
+    font-family: "DigitalSans";
+    font-size: 1.2rem;
+  }
+  .titulo {
+    color: #ffff;
+    font-family: "DigitalSans";
+    font-size: 1.6rem;
+  }
+  .titulo2 {
+    color: #50b6ba;
+    font-family: "DigitalSans";
+    font-size: 0.8rem;
+  }
+}
+
+@media (min-width: 768px) {
+  p {
+    margin: 0;
+  }
+  .text1 {
+    bottom: 28%;
+    right: 25%;
+  }
+  .text2 {
+    bottom: 0%;
+    right: 75%;
+  }
+  ul li {
+    color: #ffff;
+    font-family: "DigitalSans";
+    font-size: 0.8rem;
+  }
+  .texto {
+    color: black;
+    font-family: "DigitalSans";
+    font-size: 2.4rem;
+  }
+  .titulo {
+    color: #ffff;
+    font-family: "DigitalSans";
+    font-size: 3rem;
+  }
+  .titulo2 {
+    color: #50b6ba;
+    font-family: "DigitalSans";
+    font-size: 1.8rem;
+  }
+}
+
+@media (min-width: 992px) {
+    p {
+        margin: 0;
+      }
+      .text1 {
+        bottom: 28%;
+        right: 30%;
+      }
+      .text2 {
+        bottom: 0%;
+        right: 80%;
+      }
+      ul li {
+        color: #ffff;
+        font-family: "DigitalSans";
+        font-size: 0.8rem;
+      }
+      .texto {
+        color: black;
+        font-family: "DigitalSans";
+        font-size: 2.4rem;
+      }
+      .titulo {
+        color: #ffff;
+        font-family: "DigitalSans";
+        font-size: 3rem;
+      }
+      .titulo2 {
+        color: #50b6ba;
+        font-family: "DigitalSans";
+        font-size: 1.8rem;
+      }
+}
+
