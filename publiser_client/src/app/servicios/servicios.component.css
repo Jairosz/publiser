@@ -19,16 +19,17 @@ h3 {
   width: 100%;
 }
 .row {
-  display: flex;
+  padding-inline: 300px;
+  width: 100%;
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(min(250px, 100%), 1fr));
   gap: 90px;
   margin-bottom: 20px;
 }
 .card {
   background-color: #50b6ba;
   border-radius: 15px;
-  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
-  width: 300px;
-  height: 370px;
+  height: 380px;
   text-align: center;
   padding: 10px;
 }
