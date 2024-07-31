@@ -1,0 +1,17 @@
+.container100 {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    width: 100%;
+    height: 80%;
+  }
+.mini-container{
+    width: 50%;
+}
+h1 {
+    font-family: "DigitalSans";
+    color: white;
+    margin-bottom: 20px;
+    font-size: 3rem;
+    text-align: center;
+  }

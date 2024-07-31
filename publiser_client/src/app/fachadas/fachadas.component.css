@@ -41,7 +41,7 @@ button:hover {
 }
 .imageContainer img {
   margin-right: 15rem;
-
+  width: 400px;
   height: 250px;
   max-width: 100%;
   border-radius: 0.5rem;
@@ -82,18 +82,18 @@ h1 {
       background: url("../../assets/img/bordalas.jpg") no-repeat 50% / cover;
     }
     &:nth-of-type(2) {
-      background: url("../../assets/img/comidascaseras.png") no-repeat 50% /
+      background: url("https://via.placeholder.com/350x700") no-repeat 50% /
         cover;
     }
     &:nth-of-type(3) {
-      background: url("../../assets/img/depilacion.png") no-repeat 50% / cover;
+      background: url("https://via.placeholder.com/350x700") no-repeat 50% / cover;
     }
     &:nth-of-type(4) {
-      background: url("../../assets/img/lavanderiarosa.png") no-repeat 50% /
+      background: url("https://via.placeholder.com/350x700") no-repeat 50% /
         cover;
     }
     &:nth-of-type(5) {
-      background: url("../../assets/img/bellezanatural.png") no-repeat 50% /
+      background: url("https://via.placeholder.com/350x700") no-repeat 50% /
         cover;
     }
 
