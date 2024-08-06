@@ -82,18 +82,18 @@ h1 {
       background: url("../../assets/img/bordalas.jpg") no-repeat 50% / cover;
     }
     &:nth-of-type(2) {
-      background: url("https://via.placeholder.com/350x700") no-repeat 50% /
+      background: url("https://fakeimg.pl/540x400") no-repeat 50% /
         cover;
     }
     &:nth-of-type(3) {
-      background: url("https://via.placeholder.com/350x700") no-repeat 50% / cover;
+      background: url("https://fakeimg.pl/540x400") no-repeat 50% / cover;
     }
     &:nth-of-type(4) {
-      background: url("https://via.placeholder.com/350x700") no-repeat 50% /
+      background: url("https://fakeimg.pl/540x400") no-repeat 50% /
         cover;
     }
     &:nth-of-type(5) {
-      background: url("https://via.placeholder.com/350x700") no-repeat 50% /
+      background: url("https://fakeimg.pl/540x400") no-repeat 50% /
         cover;
     }
 

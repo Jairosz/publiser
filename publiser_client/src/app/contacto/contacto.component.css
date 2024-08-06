@@ -1,17 +1,58 @@
 .container100 {
-    display: flex;
-    flex-direction: column;
-    justify-content: center;
-    width: 100%;
-    height: 80%;
-  }
-.mini-container{
-    width: 50%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  width: 100%;
+  height: 80vh;
 }
+
+.mini-container {
+  width: 50%;
+  padding: 80px;
+}
+
+.mini-container.text {
+  display: flex;
+  flex-direction: column;
+  align-items: normal;
+  justify-content: center;
+}
+
+.mini-container iframe {
+  width: 100%;
+  height: 55vh;
+  border: 0;
+}
+
 h1 {
-    font-family: "DigitalSans";
-    color: white;
-    margin-bottom: 20px;
-    font-size: 3rem;
-    text-align: center;
-  }
+  font-family: "DigitalSans";
+  color: white;
+  margin-bottom: 20px;
+  font-size: 3rem;
+  text-align: center;
+}
+
+
+
+.contact-item {
+  display: flex;
+  align-items: center;
+  margin-bottom: 10px;
+}
+
+.contact-item fa-icon {
+  margin-right: 10px;
+  font-size: 1.5rem;
+  color: white;
+}
+p{
+  font-size: 2rem;
+}
+a{
+  text-decoration: none;
+  font-size: 1.5rem;
+  color: white;
+}
+a:hover{
+  color: rgb(67, 67, 234);
+}
