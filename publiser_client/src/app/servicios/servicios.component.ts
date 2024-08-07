@@ -8,5 +8,7 @@ import { Component } from '@angular/core';
   styleUrl: './servicios.component.css'
 })
 export class ServiciosComponent {
-
+  openPDF(): void {
+    window.open('assets/catalogos/sample.pdf', '_blank');
+  }
 }

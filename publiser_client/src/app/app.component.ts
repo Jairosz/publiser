@@ -7,11 +7,12 @@ import { ServiciosComponent } from './servicios/servicios.component';
 import { RotulacionesComponent } from "./rotulaciones/rotulaciones.component";
 import { ContactoComponent } from './contacto/contacto.component';
 import { ImprentaComponent } from './imprenta/imprenta.component';
+import { FooterComponent } from './footer/footer.component';
 
 @Component({
   selector: 'app-root',
   standalone: true,
-  imports: [RouterOutlet, NavbarComponent, LandingComponent, ServiciosComponent, ArticulosComponent, RotulacionesComponent, RotulacionesComponent, ContactoComponent, ImprentaComponent],
+  imports: [RouterOutlet, NavbarComponent, LandingComponent, ServiciosComponent, ArticulosComponent, RotulacionesComponent, RotulacionesComponent, ContactoComponent, ImprentaComponent, FooterComponent],
   templateUrl: './app.component.html',
   styleUrl: './app.component.css'
 })

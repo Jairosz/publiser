@@ -23,6 +23,7 @@ img {
   height: 350px;
 }
 ul li {
+    padding-block: 0.5rem;
   list-style-type: none;
   font-size: 1.2rem;
   color: white;
@@ -30,5 +31,14 @@ ul li {
   text-align: center;
 }
 ul {
-  margin-inline: 4rem;
+  PADDING-inline: 4rem;
 }
+button {
+    background-color: #2c7a76;
+    color: white;
+    border: none;
+    border-radius: 5px;
+    padding: 10px 20px;
+    margin-top: 20px;
+    cursor: pointer;
+  }
