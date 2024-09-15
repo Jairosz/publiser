@@ -70,7 +70,7 @@ h1 {
   gap: 10px;
 
   div {
-    flex: 0 0 150px;
+    flex: 0 0 300px;
     border-radius: 0.5rem;
     transition: 0.5s ease-in-out;
     cursor: pointer;
@@ -79,24 +79,15 @@ h1 {
     overflow: hidden;
 
     &:nth-of-type(1) {
-      background: url("../../assets/img/bordalas.jpg") no-repeat 50% / cover;
+      background: url("../../assets/img/fachada1.jpg") no-repeat 50% / cover;
     }
     &:nth-of-type(2) {
-      background: url("https://fakeimg.pl/540x400") no-repeat 50% /
+      background: url("../../assets/img/fachada2.jpeg") no-repeat 50% /
         cover;
     }
     &:nth-of-type(3) {
-      background: url("https://fakeimg.pl/540x400") no-repeat 50% / cover;
+      background: url("../../assets/img/fachada3.jpeg") no-repeat 50% / cover;
     }
-    &:nth-of-type(4) {
-      background: url("https://fakeimg.pl/540x400") no-repeat 50% /
-        cover;
-    }
-    &:nth-of-type(5) {
-      background: url("https://fakeimg.pl/540x400") no-repeat 50% /
-        cover;
-    }
-
     .content {
       font-size: 1.5rem;
       color: #fff;
@@ -120,7 +111,7 @@ h1 {
       }
       span{
         font-family: 'AspiraXXXNarBlackItalic';
-        color: red;
+        color: #31b1ab;
         margin-top: 5px;
         font-size: 1.2rem;
       }
