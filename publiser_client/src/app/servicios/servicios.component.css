@@ -59,3 +59,41 @@ h3 {
   background-color: #153936;
 }
 
+/* Para pantallas grandes (mantener el diseño original) */
+@media screen and (min-width: 1024px) {
+  .row {
+    padding-inline: 300px;
+    grid-template-columns: repeat(auto-fit, minmax(min(250px, 100%), 1fr));
+    gap: 90px;
+  }
+  .card {
+    height: 380px;
+  }
+}
+
+/* Para pantallas medianas (tabletas) */
+@media screen and (max-width: 1023px) {
+  .row {
+    padding-inline: 100px;
+    grid-template-columns: repeat(auto-fit, minmax(min(200px, 100%), 1fr));
+    gap: 60px;
+  }
+  .card {
+    height: auto; /* Ajustar altura automáticamente */
+  }
+}
+
+/* Para pantallas pequeñas (móviles) */
+@media screen and (max-width: 600px) {
+  .row {
+    padding-inline: 20px;
+    grid-template-columns: 1fr; /* Mostrar una tarjeta por fila */
+    gap: 30px;
+  }
+  .card {
+    height: auto; /* Dejar que la altura se ajuste automáticamente */
+  }
+  .card img {
+    height: auto; /* Permitir que la imagen se ajuste */
+  }
+}

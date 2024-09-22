@@ -101,3 +101,54 @@ h1 {
   height: 30vh;
   margin-block: 2rem;
 }
+/* Breakpoint: Dispositivos pequeños (móviles) - hasta 320px */
+@media only screen and (max-width: 320px) {
+  /* Estilos para móviles pequeños */
+}
+
+/* Breakpoint: Móviles en general - hasta 480px */
+@media only screen and (max-width: 480px) {
+  /* Estilos para móviles en general */
+  .container100{
+    display: none;
+  }
+}
+/* Breakpoint: Móviles y pequeños tablets - hasta 576px */
+@media only screen and (max-width: 576px) {
+  /* Estilos para móviles y pequeños tablets */
+}
+
+/* Breakpoint: Tablets en orientación vertical - hasta 768px */
+@media only screen and (max-width: 768px) {
+  /* Estilos para tablets en orientación vertical */
+}
+
+/* Breakpoint: Tablets en orientación horizontal o pequeñas pantallas de laptop - hasta 992px */
+@media only screen and (max-width: 992px) {
+  /* Estilos para tablets en horizontal o pequeñas laptops */
+}
+
+/* Breakpoint: Laptops estándar - hasta 1024px */
+@media only screen and (max-width: 1024px) {
+  /* Estilos para laptops estándar */
+}
+
+/* Breakpoint: Laptops más grandes o pantallas de escritorio pequeñas - hasta 1200px */
+@media only screen and (max-width: 1200px) {
+  /* Estilos para laptops grandes o pantallas de escritorio pequeñas */
+}
+
+/* Breakpoint: Pantallas de escritorio medianas - hasta 1400px */
+@media only screen and (max-width: 1400px) {
+  /* Estilos para pantallas de escritorio medianas */
+}
+
+/* Breakpoint: Pantallas de escritorio grandes - hasta 1600px */
+@media only screen and (max-width: 1600px) {
+  /* Estilos para pantallas de escritorio grandes */
+}
+
+/* Breakpoint: Pantallas muy grandes - más de 1600px */
+@media only screen and (min-width: 1601px) {
+  /* Estilos para pantallas muy grandes */
+}
