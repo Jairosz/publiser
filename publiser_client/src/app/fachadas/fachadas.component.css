@@ -129,7 +129,9 @@ h1 {
     }
   }
 }
-
+.movil{
+  display: none;
+}
 /* Breakpoint: Dispositivos pequeños (móviles) - hasta 320px */
 @media only screen and (max-width: 320px) {
   /* Estilos para móviles pequeños */
@@ -140,6 +142,26 @@ h1 {
   /* Estilos para móviles en general */
   .container100{
     display: none;
+  }
+  .movil{
+    display: block;
+    padding: 1rem;
+  }
+  .movil p{
+    color: #50b6ba;
+    text-align: left;
+    font-weight: bold;
+    font-size: 0.8rem;
+  }
+  .movil p span{
+    color: white;
+  }
+  .movil img {
+    width: 100%;    /* La imagen ocupará el 100% del ancho del contenedor */
+    height: fit-content;   /* La altura se ajustará automáticamente para mantener la proporción */
+    max-width: 100%; /* Asegurarse de que la imagen no sea más grande que el contenedor */
+    border-radius: 0.5rem; /* Opcional: bordes redondeados */
+    box-shadow: 1px 5px 8px rgba(13, 158, 211, 0.681); /* Opcional: sombra para mejorar el estilo */
   }
 }
 /* Breakpoint: Móviles y pequeños tablets - hasta 576px */
