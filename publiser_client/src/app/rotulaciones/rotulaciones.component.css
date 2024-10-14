@@ -104,6 +104,12 @@ h1 {
 /* Breakpoint: Dispositivos pequeños (móviles) - hasta 320px */
 @media only screen and (max-width: 320px) {
   /* Estilos para móviles pequeños */
+  .container100{
+    display: none;
+  }
+  h1{
+    display: none;
+  }
 }
 
 /* Breakpoint: Móviles en general - hasta 480px */
@@ -112,36 +118,65 @@ h1 {
   .container100{
     display: none;
   }
+  h1{
+    display: none;
+  }
 }
 /* Breakpoint: Móviles y pequeños tablets - hasta 576px */
 @media only screen and (max-width: 576px) {
   /* Estilos para móviles y pequeños tablets */
+  .container100{
+    display: none;
+  }
+  h1{
+    display: none;
+  }
 }
 
 /* Breakpoint: Tablets en orientación vertical - hasta 768px */
 @media only screen and (max-width: 768px) {
   /* Estilos para tablets en orientación vertical */
+  .container100{
+    display: none;
+  }
+  h1{
+    display: none;
+  }
 }
 
 /* Breakpoint: Tablets en orientación horizontal o pequeñas pantallas de laptop - hasta 992px */
 @media only screen and (max-width: 992px) {
   /* Estilos para tablets en horizontal o pequeñas laptops */
+  .container100{
+    display: none;
+  }
+  h1{
+    display: none;
+  }
 }
 
 /* Breakpoint: Laptops estándar - hasta 1024px */
 @media only screen and (max-width: 1024px) {
-  /* Estilos para laptops estándar */
+  /* Estilos para tablets en horizontal o pequeñas laptops */
+  .container100{
+    display: none;
+  }
+  h1{
+    display: none;
+  }
 }
 
 /* Breakpoint: Laptops más grandes o pantallas de escritorio pequeñas - hasta 1200px */
 @media only screen and (max-width: 1200px) {
-  /* Estilos para laptops grandes o pantallas de escritorio pequeñas */
+  /* Estilos para tablets en horizontal o pequeñas laptops */
+  .container100{
+    display: none;
+  }
+  h1{
+    display: none;
+  }
 }
 
-/* Breakpoint: Pantallas de escritorio medianas - hasta 1400px */
-@media only screen and (max-width: 1400px) {
-  /* Estilos para pantallas de escritorio medianas */
-}
 
 /* Breakpoint: Pantallas de escritorio grandes - hasta 1600px */
 @media only screen and (max-width: 1600px) {

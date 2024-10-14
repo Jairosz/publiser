@@ -9,6 +9,6 @@ import { Component } from '@angular/core';
 })
 export class ServiciosComponent {
   openPDF(): void {
-    window.open('assets/catalogos/sample.pdf', '_blank');
+    window.open('https://drive.google.com/drive/folders/1rjpntJg6eQmTr8NoS9Dgn9o3vNGCBbEu?usp=sharing', '_blank');
   }
 }

@@ -1,91 +1,381 @@
+.contentBelow {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  margin-bottom: 20px;
+}
+
+.textContainer {
+  text-align: center;
+  flex: 1;
+  margin-left: 20rem;
+  padding: 20px;
+  font-size: 1.2rem;
+  color: #ffff;
+}
+ul li {
+  text-align: left;
+  list-style: none;
+}
+strong {
+  color: #50b6ba;
+}
+button {
+  background-color: #2c7a76;
+  color: white;
+  border: none;
+  border-radius: 5px;
+  padding: 10px 20px;
+  margin-top: 20px;
+  cursor: pointer;
+}
+button:hover {
+  background-color: #153936;
+}
+.imageContainer {
+  flex: 1;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+.imageContainer img {
+  margin-right: 15rem;
+  width: 400px;
+  height: 250px;
+  max-width: 100%;
+  border-radius: 0.5rem;
+  box-shadow: 1px 5px 8px #50b6ba;
+}
+
+.container100 {
+  height: 100%;
+  width: 100%;
+  background-size: cover;
+  background-repeat: no-repeat;
+  background-position: center;
+}
 h1 {
   font-family: "DigitalSans";
   color: white;
   margin-bottom: 20px;
-  font-size: 3rem;
   text-align: center;
+  font-size: 3rem;
 }
-.container100 {
+.containerMain {
+  width: 100%;
   display: flex;
   justify-content: center;
-  align-items: center;
-  width: 100%;
-  height: 60vh;
-}
-.texto {
-  width: 60%;
-  display: flex;
-}
-.imagen {
-  width: 40%;
-}
-img {
-  height: 350px;
-}
-ul li {
-    padding-block: 0.5rem;
-  list-style-type: none;
-  font-size: 1.2rem;
-  color: white;
-  font-weight: bold;
-  text-align: center;
-}
-ul {
-  PADDING-inline: 4rem;
-}
-button {
-    background-color: #2c7a76;
-    color: white;
-    border: none;
-    border-radius: 5px;
-    padding: 10px 20px;
-    margin-top: 20px;
+  height: 450px;
+  gap: 10px;
+
+  div {
+    flex: 0 0 300px;
+    border-radius: 0.5rem;
+    transition: 0.5s ease-in-out;
     cursor: pointer;
+    box-shadow: 1px 5px 8px #50b6ba;
+    position: relative;
+    overflow: hidden;
+
+    &:nth-of-type(1) {
+      background: url("../../assets/img/fachada1.jpg") no-repeat 50% / cover;
+    }
+    &:nth-of-type(2) {
+      background: url("../../assets/img/fachada2.jpeg") no-repeat 50% / cover;
+    }
+    &:nth-of-type(3) {
+      background: url("../../assets/img/fachada3.jpeg") no-repeat 50% / cover;
+    }
+    .content {
+      font-size: 1.5rem;
+      color: #fff;
+      display: flex;
+      align-items: center;
+      padding: 15px;
+      opacity: 0;
+      flex-direction: column;
+      height: 100%;
+      justify-content: flex-end;
+      background: rgba(0, 0, 0, 0.42);
+      transform: translatey(100%);
+      transition: opacity 0.5s ease-in-out, transform 0.5s 0.2s;
+      visibility: hidden;
+
+      p {
+        font-family: "AspiraXXXNarBlackItalic";
+        display: block;
+        margin-top: 5px;
+        font-size: 1.2rem;
+      }
+      span {
+        font-family: "AspiraXXXNarBlackItalic";
+        color: #31b1ab;
+        margin-top: 5px;
+        font-size: 1.2rem;
+      }
+    }
+
+    &:hover {
+      flex: 0 0 600px;
+      box-shadow: 1px 3px 15px #08c0ee;
+    }
+
+    &:hover .content {
+      opacity: 1;
+      transform: translatey(0%);
+      visibility: visible;
+    }
   }
-  /* Breakpoint: Dispositivos pequeños (móviles) - hasta 320px */
-@media only screen and (max-width: 320px) {
-  /* Estilos para móviles pequeños */
+}
+.movil {
+  display: none;
+}
+/* Breakpoint: Dispositivos pequeños (móviles) - hasta 320px */
+@media only screen and (max-width: 325px) {
+  .movil {
+    position: relative;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+  }
+  .button-container {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+  }
+  button {
+    padding-inline: 1rem;
+    margin-inline: 2rem;
+    margin-bottom: 1.5rem;
+  }
 }
 
 /* Breakpoint: Móviles en general - hasta 480px */
 @media only screen and (max-width: 480px) {
   /* Estilos para móviles en general */
-  .container100{
+  .container100 {
     display: none;
   }
-  h1{
-    display: none;
+  .movil {
+    display: block;
+    padding: 1rem;
   }
+  .movil p {
+    color: #50b6ba;
+    text-align: left;
+    font-weight: bold;
+    font-size: 0.8rem;
+  }
+  .movil p span {
+    color: white;
+  }
+  .movil img {
+    width: 100%; /* La imagen ocupará el 100% del ancho del contenedor */
+    height: fit-content; /* La altura se ajustará automáticamente para mantener la proporción */
+    max-width: 100%; /* Asegurarse de que la imagen no sea más grande que el contenedor */
+    border-radius: 0.5rem; /* Opcional: bordes redondeados */
+    box-shadow: 1px 5px 8px rgba(13, 158, 211, 0.681); /* Opcional: sombra para mejorar el estilo */
+  }
+  .button-container {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+  }
+  button{
+    padding-inline: 4rem;
+    margin-inline: 2.8rem;
+    margin-bottom: 1.5rem;
+  }
+
 }
 /* Breakpoint: Móviles y pequeños tablets - hasta 576px */
 @media only screen and (max-width: 576px) {
-  /* Estilos para móviles y pequeños tablets */
-}
+  /* Estilos para móviles en general */
+  .container100 {
+    display: none;
+  }
+  .movil {
+    display: block;
+    padding: 1rem;
+  }
+  .movil p {
+    color: #50b6ba;
+    text-align: left;
+    font-weight: bold;
+    font-size: 0.8rem;
+  }
+  .movil p span {
+    color: white;
+  }
+  .movil img {
+    width: 100%; /* La imagen ocupará el 100% del ancho del contenedor */
+    height: fit-content; /* La altura se ajustará automáticamente para mantener la proporción */
+    max-width: 100%; /* Asegurarse de que la imagen no sea más grande que el contenedor */
+    border-radius: 0.5rem; /* Opcional: bordes redondeados */
+    box-shadow: 1px 5px 8px rgba(13, 158, 211, 0.681); /* Opcional: sombra para mejorar el estilo */
+  }
+  .button-container {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+  }
+  button{
+    padding-inline: 4rem;
+    margin-inline: 2.8rem;
+    margin-bottom: 1.5rem;
+  }}
 
 /* Breakpoint: Tablets en orientación vertical - hasta 768px */
 @media only screen and (max-width: 768px) {
-  /* Estilos para tablets en orientación vertical */
+   .container100 {
+    display: none;
+  }
+  .movil {
+    display: block;
+    padding: 1rem;
+  }
+  .movil p {
+    color: #50b6ba;
+    text-align: left;
+    font-weight: bold;
+    font-size: 0.8rem;
+  }
+  .movil p span {
+    color: white;
+  }
+  .movil img {
+    width: 100%; /* La imagen ocupará el 100% del ancho del contenedor */
+    height: fit-content; /* La altura se ajustará automáticamente para mantener la proporción */
+    max-width: 100%; /* Asegurarse de que la imagen no sea más grande que el contenedor */
+    border-radius: 0.5rem; /* Opcional: bordes redondeados */
+    box-shadow: 1px 5px 8px rgba(13, 158, 211, 0.681); /* Opcional: sombra para mejorar el estilo */
+  }
+  .button-container {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+  }
+  button{
+    padding-inline: 4rem;
+    margin-inline: 2.8rem;
+    margin-bottom: 1.5rem;
+  }
 }
 
 /* Breakpoint: Tablets en orientación horizontal o pequeñas pantallas de laptop - hasta 992px */
 @media only screen and (max-width: 992px) {
   /* Estilos para tablets en horizontal o pequeñas laptops */
+  .container100 {
+    display: none;
+  }
+  .movil {
+    display: block;
+    padding: 1rem;
+  }
+  .movil p {
+    color: #50b6ba;
+    text-align: left;
+    font-weight: bold;
+    font-size: 0.8rem;
+  }
+  .movil p span {
+    color: white;
+  }
+  .movil img {
+    width: 100%; /* La imagen ocupará el 100% del ancho del contenedor */
+    height: fit-content; /* La altura se ajustará automáticamente para mantener la proporción */
+    max-width: 100%; /* Asegurarse de que la imagen no sea más grande que el contenedor */
+    border-radius: 0.5rem; /* Opcional: bordes redondeados */
+    box-shadow: 1px 5px 8px rgba(13, 158, 211, 0.681); /* Opcional: sombra para mejorar el estilo */
+  }
+  .button-container {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+  }
+  button{
+    padding-inline: 4rem;
+    margin-inline: 2.8rem;
+    margin-bottom: 1.5rem;
+  }
 }
 
 /* Breakpoint: Laptops estándar - hasta 1024px */
 @media only screen and (max-width: 1024px) {
   /* Estilos para laptops estándar */
+  .container100 {
+    display: none;
+  }
+  .movil {
+    display: block;
+    padding: 1rem;
+  }
+  .movil p {
+    color: #50b6ba;
+    text-align: left;
+    font-weight: bold;
+    font-size: 0.8rem;
+  }
+  .movil p span {
+    color: white;
+  }
+  .movil img {
+    width: 100%; /* La imagen ocupará el 100% del ancho del contenedor */
+    height: fit-content; /* La altura se ajustará automáticamente para mantener la proporción */
+    max-width: 100%; /* Asegurarse de que la imagen no sea más grande que el contenedor */
+    border-radius: 0.5rem; /* Opcional: bordes redondeados */
+    box-shadow: 1px 5px 8px rgba(13, 158, 211, 0.681); /* Opcional: sombra para mejorar el estilo */
+  }
+  .button-container {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+  }
+  button{
+    padding-inline: 4rem;
+    margin-inline: 2.8rem;
+    margin-bottom: 1.5rem;
+  }
 }
 
 /* Breakpoint: Laptops más grandes o pantallas de escritorio pequeñas - hasta 1200px */
 @media only screen and (max-width: 1200px) {
-  /* Estilos para laptops grandes o pantallas de escritorio pequeñas */
+    /* Estilos para laptops estándar */
+    .container100 {
+      display: none;
+    }
+    .movil {
+      display: block;
+      padding: 1rem;
+    }
+    .movil p {
+      color: #50b6ba;
+      text-align: left;
+      font-weight: bold;
+      font-size: 0.8rem;
+    }
+    .movil p span {
+      color: white;
+    }
+    .movil img {
+      width: 100%; /* La imagen ocupará el 100% del ancho del contenedor */
+      height: fit-content; /* La altura se ajustará automáticamente para mantener la proporción */
+      max-width: 100%; /* Asegurarse de que la imagen no sea más grande que el contenedor */
+      border-radius: 0.5rem; /* Opcional: bordes redondeados */
+      box-shadow: 1px 5px 8px rgba(13, 158, 211, 0.681); /* Opcional: sombra para mejorar el estilo */
+    }
+    .button-container {
+      display: flex;
+      justify-content: center;
+      align-items: center;
+    }
+    button{
+      padding-inline: 4rem;
+      margin-inline: 2.8rem;
+      margin-bottom: 1.5rem;
+    }
 }
 
-/* Breakpoint: Pantallas de escritorio medianas - hasta 1400px */
-@media only screen and (max-width: 1400px) {
-  /* Estilos para pantallas de escritorio medianas */
-}
 
 /* Breakpoint: Pantallas de escritorio grandes - hasta 1600px */
 @media only screen and (max-width: 1600px) {
